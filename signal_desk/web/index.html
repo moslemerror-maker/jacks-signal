@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Desk</title>
+<style>:root{--bg:#f6f7f9;--card:#fff;--ink:#14181f;--mut:#667085;--line:#e4e7ec;--up:#0f8a4f;--dn:#c8322b;--warn:#b7791f;--acc:#2b59c3;--chip:#eef1f6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#171b23;--ink:#e8ebf0;--mut:#9aa3b2;--line:#262c37;--up:#3ecf8e;--dn:#ff6b61;--warn:#f0b44c;--acc:#7aa2ff;--chip:#202633}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 18px;border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:5}
+h1{font-size:17px;margin:0 8px 0 0}h2{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut);margin:0 0 10px}
+.chip{background:var(--chip);border-radius:999px;padding:3px 10px;font-size:12px;white-space:nowrap}.ok{color:var(--up)}.bad{color:var(--dn)}.wr{color:var(--warn)}
+main{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;padding:14px 18px;max-width:1500px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.s3{grid-column:span 3}.s4{grid-column:span 4}.s5{grid-column:span 5}.s6{grid-column:span 6}.s7{grid-column:span 7}.s8{grid-column:span 8}.s12{grid-column:span 12}
+@media (max-width:1000px){.s3,.s4,.s5,.s6,.s7,.s8{grid-column:span 12}}
+.big{font-size:26px;font-weight:650;font-variant-numeric:tabular-nums}.sub{color:var(--mut);font-size:12px}
+.plan{font-size:15px;font-weight:550}.kv{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px 14px}
+.kv div{display:flex;flex-direction:column}.kv b{font-variant-numeric:tabular-nums;font-weight:600}.kv span{color:var(--mut);font-size:11px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{padding:5px 6px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{color:var(--mut);font-weight:500;font-size:12px}td:first-child,th:first-child{text-align:left}.tw{overflow-x:auto}
+tr.atm td{background:color-mix(in srgb,var(--acc) 12%,transparent)}.wall{font-weight:700}
+.g{display:inline-block;min-width:22px;text-align:center;border-radius:6px;padding:0 5px;font-weight:700;font-size:12px}
+.gA{background:color-mix(in srgb,var(--up) 22%,transparent);color:var(--up)}.gB{background:color-mix(in srgb,var(--warn) 22%,transparent);color:var(--warn)}.gC{background:var(--chip);color:var(--mut)}
+.checks{font-size:12px;color:var(--mut);text-align:left;white-space:normal}
+button{font:inherit;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:8px;padding:5px 10px;cursor:pointer}
+button.p{background:var(--acc);border-color:var(--acc);color:#fff}input,select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 8px;width:100%}
+form{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:8px;align-items:end}label{font-size:11px;color:var(--mut);display:flex;flex-direction:column;gap:3px}
+.feed{max-height:420px;overflow:auto;font-size:12.5px}.feed div{border-bottom:1px solid var(--line);padding:6px 0;white-space:pre-wrap}
+.feed .signal{border-left:3px solid var(--up);padding-left:8px}.feed .error{border-left:3px solid var(--dn);padding-left:8px}.feed .headsup{border-left:3px solid var(--warn);padding-left:8px}
+.msg{font-size:12px;margin-top:6px}details summary{cursor:pointer;color:var(--mut)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Signal Desk</h1>
+  <span class="chip" id="clock">-</span>
+  <span class="chip" id="c-dhan">Dhan -</span>
+  <span class="chip" id="c-tg" style="cursor:pointer" title="Open Telegram setup">Telegram -</span>
+  <span class="chip" id="c-data">data -</span>
+  <span class="chip" id="c-prof">stocks -</span>
+  <span class="chip" id="c-auto">autostart -</span>
+  <span style="flex:1"></span>
+  <label style="flex-direction:row;align-items:center;gap:6px;color:var(--ink);font-size:13px"><input type="checkbox" id="alerts" style="width:auto"> Telegram alerts</label>
+</header>
+<main>
+  <section class="card s3"><h2>Nifty 50</h2><div class="big" id="n-ltp">-</div><div class="sub" id="n-chg">-</div></section>
+  <section class="card s3"><h2>Bank Nifty · VIX</h2><div class="big" id="b-ltp">-</div><div class="sub" id="b-chg">-</div><div class="sub" id="v-ltp">-</div></section>
+  <section class="card s3"><h2>Day P&amp;L · risk</h2><div class="big" id="r-pnl">-</div><div class="sub" id="r-info">-</div></section>
+  <section class="card s3"><h2>Signals today</h2><div class="big" id="s-sum">-</div><div class="sub" id="s-sub">-</div></section>
+
+  <section class="card s12"><h2>Right now</h2><div class="plan" id="plan">Loading…</div></section>
+
+  <section class="card s7"><h2>Levels</h2><div class="kv" id="levels"></div></section>
+  <section class="card s5"><h2>Option chain</h2><div id="ch-tabs" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px"></div><div class="sub" id="ch-exp" style="margin-bottom:6px"></div><div class="tw"><table id="chain"></table></div></section>
+
+  <section class="card s12"><h2>Signals</h2><div class="tw"><table id="sigs"></table></div><div class="sub" style="margin-top:6px">Every signal is tracked to T1 / stop / 3:30 close, taken or not - that's your evidence log (state/journal.csv).</div></section>
+
+  <section class="card s7"><h2>My trades (you place orders in Dhan/Kite - log them here)</h2>
+    <form id="tform">
+      <label>Type<select name="kind"><option value="OPTION">Nifty option</option><option value="STOCK">Stock</option></select></label>
+      <label>Strike / Symbol<input name="ref" placeholder="22500 or RELIANCE" required></label>
+      <label>Direction<select name="opt"><option value="CE">CE - buy call (Nifty up)</option><option value="PE">PE - buy put (Nifty down)</option><option value="BUY">BUY stock (long)</option><option value="SELL">SELL stock (short)</option></select></label>
+      <label>Expiry<input name="expiry" placeholder="auto"></label>
+      <label>Entry price<input name="entry" type="number" step="0.05" required></label>
+      <label>Qty<input name="qty" type="number" step="1" required></label>
+      <label>Stop<input name="sl" type="number" step="0.05"></label>
+      <label>Target<input name="target" type="number" step="0.05"></label>
+      <input type="hidden" name="signal_id">
+      <label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" name="paper" style="width:auto"> Paper / practice (not counted in loss limit)</label>
+      <button class="p" type="submit">Log trade</button>
+    </form>
+    <div class="msg" id="tmsg"></div>
+    <div class="tw" style="margin-top:10px"><table id="trades"></table></div>
+  </section>
+  <section class="card s5"><h2>Alerts</h2><div class="feed" id="feed"></div></section>
+
+  <section class="card s12"><h2>Backtest - how these Nifty rules did on real past data</h2>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><select id="btdays" style="width:auto"><option value="20">last 20 days</option><option value="40">last 40 days</option><option value="60" selected>last 60 days</option></select>
+    <button class="p" id="btrun">Run backtest</button><span class="sub" id="btstatus"></span></div>
+    <div id="btout" style="margin-top:10px"></div></section>
+
+  <section class="card s12"><h2>Rule testing - live rules vs variants, on a period never looked at</h2>
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><select id="rsdays" style="width:auto"><option value="160">~8 months</option><option value="250" selected>~1 year</option><option value="370">~1.5 years</option></select>
+    <button class="p" id="rsrun">Run rule testing</button><span class="sub" id="rsstatus"></span></div>
+    <div id="rsout" style="margin-top:10px"></div></section>
+
+  <section class="card s7"><h2>Pre-market watchlist (F&amp;O stocks)</h2><div class="tw"><table id="watch"></table></div></section>
+  <section class="card s5"><h2>Settings</h2>
+    <details open><summary>Dhan access token (renew daily)</summary>
+      <form id="tokform" style="margin-top:8px"><label style="grid-column:1/-1">Access token<input name="token" type="password" placeholder="paste new token"></label>
+      <label>Client ID (optional)<input name="client_id"></label><button class="p" type="submit">Save token</button></form><div class="msg" id="tokmsg"></div></details>
+    <details id="tgbox" style="margin-top:10px"><summary><b>Telegram alerts setup</b></summary>
+      <form id="tgform" style="margin-top:8px"><div class="sub" style="grid-column:1/-1">1) Paste the bot token from @BotFather and Save. 2) In Telegram open your bot, press Start / send "hi". 3) Click Find my chat ID. 4) Send test.</div><label style="grid-column:1/-1">Bot token (from @BotFather)<input name="bot_token" type="password" placeholder="123456789:AA..."></label>
+      <label>Chat ID<input name="chat_id" id="chat_id"></label><button type="submit">Save</button>
+      <button type="button" id="tgfind">Find my chat ID</button><button type="button" id="tgtest">Send test</button></form><div class="msg" id="tgmsg"></div></details>
+    <details style="margin-top:10px"><summary>Alert rules</summary>
+      <form id="rform" style="margin-top:8px"><label>Push signals of grade<select name="min_grade"><option value="A">A only - strongest setups</option><option value="B">A and B - recommended</option><option value="C">Everything incl. skipped (learning)</option></select></label>
+      <label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" name="stock_alerts_enabled" style="width:auto"> Stock signals (not tested yet - leave off)</label>
+      <label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" name="nifty_trend" style="width:auto"> Nifty: only with the day's trend (calls above open &amp; prev close, puts below)</label>
+      <label>On expiry day buy<select name="expiry_day_contract"><option value="next">Next week's contract - tested (recommended)</option><option value="today">Today's expiring contract - 0DTE, untested, high risk</option></select></label>
+      <label>Nifty calls (CE)<select name="calls_mode"><option value="paper">Paper only - recommended (calls broke even in tests)</option><option value="live">Live - same as puts</option></select></label>
+      <label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" name="h1_paper" style="width:auto"> 1-hour breakout PAPER alerts</label></form>
+      <div class="msg" id="rmsg"></div>
+      <div class="sub" style="margin-top:6px">The switches above save automatically the moment you change them. The amounts below need <b>Save risk rules</b>.<br>A = every check passed · B = one warning · C/skip = a failed check or 2+ warnings (shown on this page; sent to Telegram only with "Everything").</div>
+      <form id="riskform" style="margin-top:10px"><label>Loss warning ₹<input name="daily_loss_warn" type="number" step="100"></label><label>Daily loss limit ₹<input name="daily_loss_limit" type="number" step="100"></label>
+      <label>Max trades/day<input name="max_trades" type="number" step="1" min="1"></label><label>Stock risk/trade ₹<input name="stock_risk" type="number" step="100"></label>
+      <label>Nifty: no entries after<input name="nifty_cutoff" placeholder="13:00"></label><label>Stocks: no entries after<input name="entry_cutoff" placeholder="14:30"></label><button type="submit">Save risk rules</button></form><div class="msg" id="riskmsg"></div>
+      <div class="sub" id="rules" style="margin-top:8px"></div></details>
+    <details style="margin-top:10px"><summary>Errors / diagnostics</summary><div class="sub" id="errs" style="margin-top:8px"></div></details>
+  </section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const f=(x,d=1)=>x==null||x===''?'-':Number(x).toLocaleString('en-IN',{minimumFractionDigits:d,maximumFractionDigits:d});
+const sgn=(x,d=1)=>x==null?'-':(x>=0?'+':'')+f(x,d);
+const cls=x=>x==null?'':x>=0?'ok':'bad';
+async function post(url,body){const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});return r.json()}
+let S=null, editing=false;
+function chip(el,txt,c){el.textContent=txt;el.className='chip '+(c||'')}
+function render(s){
+  S=s;const st=s.status;
+  $('clock').textContent=new Date(s.now).toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',second:'2-digit',timeZone:'Asia/Kolkata'})+' IST';
+  chip($('c-dhan'),(st.token_ok===false||st.token_expired?'Dhan token expired':st.token_ok?'Dhan connected':'Dhan checking…')+(st.token_expires?' · token valid till '+st.token_expires:'')+(st.token_autorenew?(st.token_renewed?' · auto-renewed '+st.token_renewed:' · auto-renew on'):''),st.token_ok===false||st.token_expired?'bad':st.token_ok?'ok':'');
+  const au=st.autostart||{};chip($('c-auto'),'autostart: '+(au.text||'-'),au.ok===true?'ok':au.ok===false?'bad':'');
+  chip($('c-tg'),st.telegram?(st.telegram_error?'Telegram error':'Telegram on'):'Telegram not set',st.telegram&&!st.telegram_error?'ok':'wr');
+  chip($('c-data'),`quotes ${st.last_quotes} · chain ${st.last_chain} · candles ${st.last_candles}`+(st.market_closed_today?' · market closed':''));
+  chip($('c-prof'),'stocks '+st.profiles);
+  if(!editing){$('alerts').checked=s.settings.alerts_enabled}
+  if(!st.telegram&&!window._tgOpened){$('tgbox').open=true;window._tgOpened=true}
+  const n=s.nifty;$('n-ltp').textContent=f(n.ltp);$('n-chg').innerHTML=`<span class="${cls(n.chg)}">${sgn(n.chg)} (${sgn(n.chg_pct,2)}%)</span> · lot ${n.lot||'-'}`;
+  const b=s.banknifty,bc=b.ltp&&b.prev_close?(b.ltp-b.prev_close)/b.prev_close*100:null;$('b-ltp').textContent=f(b.ltp);$('b-chg').innerHTML=`<span class="${cls(bc)}">${sgn(bc,2)}%</span>`;
+  const v=s.vix,vc=v.ltp&&v.prev_close?(v.ltp-v.prev_close)/v.prev_close*100:null;$('v-ltp').innerHTML=`VIX ${f(v.ltp,2)} <span class="${vc>0?'bad':'ok'}">${sgn(vc,1)}%</span>`;
+  const r=s.risk;$('r-pnl').innerHTML=`<span class="${cls(r.pnl)}">₹${f(r.pnl,0)}</span>`;
+  $('r-info').innerHTML=(r.paper_trades?`<span class="wr">paper: ${r.paper_trades} trade(s), ₹${f(r.paper_pnl,0)} (not counted)</span><br>`:'')+`${r.trades}/${r.max_trades} trades · warn ₹${f(r.warn,0)} · stop ₹${f(r.limit,0)}<br>`+(r.blocked?`<span class="bad">${r.blocked}</span>`:`₹${f(r.budget,0)} left before today's loss limit`);
+  const sm=s.summary;$('s-sum').textContent=`${sm.signals}`;$('s-sub').textContent=`TAKE ${sm.take} · T1 ${sm.t1} · SL ${sm.sl} · net ${sgn(sm.net_r,1)}R`;
+  $('plan').textContent=n.plan;
+  const L=n.levels,kv=[['Opening high',L.orh],['Opening low',L.orl],['Day high',L.day_high],['Day low',L.day_low],['Prev high',L.pdh],['Prev low',L.pdl],['Prev close',L.pdc],
+   ['Call wall',L.call_wall,0],['Put wall',L.put_wall,0],['Far call wall',L.call_wall_2,0],['Far put wall',L.put_wall_2,0],['PCR',L.pcr,2],['Max pain',L.max_pain,0],['15m ATR',L.atr15]];
+  $('levels').innerHTML=kv.map(([k,x,d])=>`<div><span>${k}</span><b>${f(x,d??1)}</b></div>`).join('')+`<div><span>OI flow</span><b style="font-size:12px">${L.oi_bias||'-'}</b></div><div style="grid-column:span 2"><span>Expiry</span><b style="font-size:12px">${n.near_expiry&&n.near_expiry===n.trade_expiry?(n.trade_label||n.trade_expiry):`Walls from ${n.near_label||n.near_expiry||'-'} · You buy ${n.trade_label||n.trade_expiry||'-'}`}</b></div>`;
+  const chs=n.chains&&n.chains.length?n.chains:[{expiry:n.near_expiry,role:'both',label:n.near_expiry||'-',rows:n.chain,atm:n.atm}];
+  if(!chs.find(c=>c.expiry===chSel))chSel=chs[0].expiry;
+  const role={oi:'OI walls / levels',trade:'contract the alerts tell you to buy',both:'OI walls + contract to buy'};
+  $('ch-tabs').innerHTML=chs.map(c=>`<button data-ch="${c.expiry}" class="${c.expiry===chSel?'p':''}">${c.label}</button>`).join('');
+  document.querySelectorAll('[data-ch]').forEach(b=>b.onclick=()=>{chSel=b.dataset.ch;load()});
+  const CH=chs.find(c=>c.expiry===chSel);
+  $('ch-exp').innerHTML=`Showing expiry <b>${CH.label}</b> - ${role[CH.role]||''}`;
+  const cw=CH.role==='trade'?null:L.call_wall,pw=CH.role==='trade'?null:L.put_wall;
+  $('chain').innerHTML='<tr><th>CE OI</th><th title="change in OI vs previous day, lakh">OI chg</th><th>CE LTP</th><th style="text-align:center">Strike</th><th>PE LTP</th><th title="change in OI vs previous day, lakh">OI chg</th><th>PE OI</th></tr>'+CH.rows.map(c=>
+   `<tr class="${c.strike===CH.atm?'atm':''}"><td class="${c.strike===cw?'wall bad':''}">${f(c.ce_oi/1e5,1)}L</td><td>${c.ce_chg==null?'-':f(c.ce_chg/1e5,1)}</td><td>${f(c.ce_ltp)}</td><td style="text-align:center"><b>${f(c.strike,0)}</b></td><td>${f(c.pe_ltp)}</td><td>${c.pe_chg==null?'-':f(c.pe_chg/1e5,1)}</td><td class="${c.strike===pw?'wall ok':''}">${f(c.pe_oi/1e5,1)}L</td></tr>`).join('');
+  $('sigs').innerHTML='<tr><th>Time</th><th>Symbol</th><th>Side</th><th>Grade</th><th>Entry</th><th>Stop</th><th>T1</th><th>Option / qty</th><th>Status</th><th></th></tr>'+(s.signals.length?s.signals.map(x=>{
+    const opt=x.kind==='NIFTY'?(x.strike?`<b>${f(x.strike,0)} ${x.option}</b> · exp <b>${expLbl(x.expiry)}</b> @${f(x.opt_ltp)} · ${x.lots??'-'} lot`:'-'):(x.qty?`qty ${x.qty}`:'-');
+    const chk=x.checks.map(c=>({pass:'✅',warn:'⚠️',fail:'❌',info:'💰'}[c.status]+' '+c.name+': '+c.detail)).join('<br>');
+    return `<tr><td>${x.time.slice(11,16)}</td><td><b>${x.symbol}</b></td><td class="${x.side==='LONG'?'ok':'bad'}">${x.side}</td><td><span class="g g${x.grade}">${x.grade}</span> ${x.action}</td><td>${f(x.entry,x.kind==='NIFTY'?1:2)}</td><td>${f(x.stop,x.kind==='NIFTY'?1:2)}</td><td>${f(x.t1,x.kind==='NIFTY'?1:2)}</td><td>${opt}</td><td>${x.status}${x.t2_hit?' +T2':''}</td><td><button data-sig="${x.id}">I took this</button></td></tr><tr><td colspan="10" class="checks">${chk}</td></tr>`}).join(''):'<tr><td colspan="10" class="sub" style="text-align:left">No signals yet today.</td></tr>');
+  document.querySelectorAll('[data-sig]').forEach(bt=>bt.onclick=()=>prefill(s.signals.find(x=>x.id===bt.dataset.sig)));
+  $('trades').innerHTML='<tr><th>Trade</th><th>Entry</th><th>LTP</th><th>Qty</th><th>Stop</th><th>Target</th><th>P&amp;L</th><th></th></tr>'+(s.trades.length?s.trades.map(t=>
+   `<tr><td>${t.paper?'<span class="wr">PAPER</span> ':''}${t.symbol}${t.is_open?'':' (closed)'}</td><td>${f(t.entry,2)}</td><td>${f(t.exit??t.ltp,2)}</td><td>${t.qty}</td><td>${f(t.sl,2)}</td><td>${f(t.target,2)}</td><td class="${cls(t.pnl)}">₹${f(t.pnl,0)}</td><td>${t.is_open?`<button data-close="${t.id}">Close</button> <button data-sl="${t.id}">Stop→cost</button> `:''}<button data-paper="${t.id}">${t.paper?'Make real':'Make paper'}</button> <button data-del="${t.id}">Delete</button></td></tr>`).join(''):'<tr><td colspan="8" class="sub" style="text-align:left">No trades logged.</td></tr>');
+  document.querySelectorAll('[data-close]').forEach(bt=>bt.onclick=async()=>{const t=s.trades.find(x=>x.id===bt.dataset.close);const px=prompt('Exit price for '+t.symbol,t.ltp??'');if(px){await post('/api/trade/close',{id:t.id,exit:px});load()}});
+  document.querySelectorAll('[data-paper]').forEach(bt=>bt.onclick=async()=>{const t=s.trades.find(x=>x.id===bt.dataset.paper);await post('/api/trade/paper',{id:t.id,paper:!t.paper});load()});
+  document.querySelectorAll('[data-del]').forEach(bt=>bt.onclick=async()=>{const t=s.trades.find(x=>x.id===bt.dataset.del);if(confirm('Delete '+t.symbol+' from today\'s log?')){await post('/api/trade/delete',{id:t.id});load()}});
+  document.querySelectorAll('[data-sl]').forEach(bt=>bt.onclick=async()=>{const t=s.trades.find(x=>x.id===bt.dataset.sl);await post('/api/trade/update',{id:t.id,sl:t.entry});load()});
+  $('feed').innerHTML=s.feed.map(m=>`<div class="${m.kind}"><span class="sub">${m.time}${m.telegram?' · sent':''}</span>\n${m.text.replace(/</g,'&lt;')}</div>`).join('')||'<div class="sub">No alerts yet.</div>';
+  $('watch').innerHTML='<tr><th>Stock</th><th>Setup</th><th>Bias</th><th>Prev high</th><th>Prev low</th><th>Prev close</th><th>Score</th></tr>'+(s.watchlist.length?s.watchlist.map(p=>
+   `<tr><td><b>${p.symbol}</b></td><td style="text-align:left">${p.setup}</td><td>${p.bias}</td><td>${f(p.prev_high,2)}</td><td>${f(p.prev_low,2)}</td><td>${f(p.prev_close,2)}</td><td>${f(p.score,1)}</td></tr>`).join(''):'<tr><td colspan="7" class="sub" style="text-align:left">Builds after 8:00 AM on trading days ('+st.profiles+').</td></tr>');
+  const se=s.settings;if(!editing){$('rform').min_grade.value=se.min_grade;$('rform').stock_alerts_enabled.checked=!!se.stock_alerts_enabled;$('rform').nifty_trend.checked=se.nifty_trend!==false;$('rform').h1_paper.checked=se.h1_paper!==false;$('rform').calls_mode.value=se.calls_mode||'paper';$('rform').expiry_day_contract.value=se.expiry_day_contract||'next';if(!$('chat_id').value)$('chat_id').value=se.telegram_chat_id||''}
+  $('rules').innerHTML=`Daily loss warn ₹${f(se.daily_loss_warn,0)}, stop ₹${f(se.daily_loss_limit,0)} · max ${se.max_trades} trades · stock risk ₹${f(se.stock_risk,0)}/trade · Nifty entries till ${se.nifty_cutoff||'13:00'}, stocks till ${se.entry_cutoff} · exit reminder ${se.exit_reminder} · square-off ${se.squareoff}.<br>Option signals show the worst-case loss at the stop; they warn (not block) when it exceeds what is left of today's limit.`;
+  if(!editing&&!riskDirty){const R=$('riskform');R.daily_loss_warn.value=se.daily_loss_warn;R.daily_loss_limit.value=se.daily_loss_limit;R.max_trades.value=se.max_trades;R.stock_risk.value=se.stock_risk;R.entry_cutoff.value=se.entry_cutoff;R.nifty_cutoff.value=se.nifty_cutoff||'13:00'}
+  renderBT(s.backtest||{status:'not run'});
+  renderRS(s.research||{status:'not run'});
+  $('errs').innerHTML=(st.errors.length?st.errors.join('<br>'):'No errors.')+`<br>API calls this session: ${st.api_calls} · instruments: ${st.instruments}`;
+}
+function renderBT(b){
+  $('btstatus').textContent=b.status==='done'?`ran ${b.ran_at} · ${b.sessions} sessions (${b.from} → ${b.to})`:b.status;
+  if(b.status!=='done'){$('btout').innerHTML='';return}
+  const row=(k,s)=>`<tr><td>${k}</td><td>${s.n}</td><td>${s.win_rate==null?'-':s.win_rate+'%'}</td><td>${s.t1}/${s.sl}/${s.timeout}</td><td>${s.avg_r==null?'-':sgn(s.avg_r,2)}</td><td>${sgn(s.total_r,1)}</td><td>${s.profit_factor??'-'}</td><td class="${cls(s.rupees)}">₹${f(s.rupees,0)}</td></tr>`;
+  const t=b.take;
+  const verdict=!t.n?'No TAKE signals in this period.':(t.rupees>0&&(t.profit_factor||0)>=1.3?`<span class="ok">Positive so far</span>`:t.rupees>0?`<span class="wr">Barely positive - not convincing yet</span>`:`<span class="bad">Negative - these rules lost money in this period</span>`);
+  $('btout').innerHTML=`<div class="plan" style="margin-bottom:8px">${verdict} · TAKE trades won ${t.win_rate??'-'}% · est. ₹${f(t.rupees,0)} on 1 lot · worst drawdown ₹${f(b.max_drawdown,0)}</div>
+  <div class="tw"><table><tr><th>Group</th><th>Signals</th><th>Win %</th><th>T1/SL/time</th><th>Avg R</th><th>Total R</th><th>Profit factor</th><th>Est. ₹ (1 lot)</th></tr>${row('TAKE (A+B)',b.take)}${row('Grade A',b.by_grade.A)}${row('Grade B',b.by_grade.B)}${row('Grade C (skipped)',b.by_grade.C)}</table></div>
+  <details style="margin-top:8px"><summary>All ${b.trades.length} signals</summary><div class="tw"><table><tr><th>Date</th><th>Time</th><th>Side</th><th>Grade</th><th>Entry</th><th>Stop</th><th>T1</th><th>Outcome</th><th>R</th><th>Est ₹</th><th style="text-align:left">Why skipped</th></tr>${b.trades.slice().reverse().map(x=>`<tr><td>${x.date}</td><td>${x.time}</td><td class="${x.side==='LONG'?'ok':'bad'}">${x.side}</td><td><span class="g g${x.grade}">${x.grade}</span></td><td>${f(x.entry)}</td><td>${f(x.stop)}</td><td>${f(x.t1)}</td><td>${x.outcome}</td><td>${sgn(x.r,2)}</td><td class="${cls(x.rupees)}">${f(x.rupees,0)}</td><td class="checks">${x.why_skip}</td></tr>`).join('')}</table></div></details>
+  <div class="sub" style="margin-top:6px">${b.notes.join(' ')} Past results do not guarantee future results.</div>`}
+function renderRS(b){
+  $('rsstatus').textContent=b.status==='done'?`ran ${b.ran_at||''} · unseen ${b.unseen.from} → ${b.unseen.to} (${b.unseen.n} days) · seen ${b.seen.from} → ${b.seen.to} (${b.seen.n} days)`:b.status;
+  if(b.status!=='done'){$('rsout').innerHTML='';return}
+  const c=(s)=>`<td>${s.n}</td><td>${s.win_rate==null?'-':s.win_rate+'%'}</td><td>${s.avg_r==null?'-':sgn(s.avg_r,2)}</td><td>${s.pf??'-'}</td><td class="${cls(s.rupees)}">₹${f(s.rupees,0)}</td>`;
+  const vc=v=>v.startsWith('HOLDS')?'ok':v.startsWith('better than live')?'wr':v==='baseline'?'':'bad';
+  $('rsout').innerHTML=`<div class="plan" style="margin-bottom:8px">${b.summary}</div>
+  <div class="tw"><table><tr><th style="text-align:left">Rules</th><th colspan="5">UNSEEN (older) - TAKE trades</th><th colspan="5">SEEN (recent) - TAKE trades</th><th style="text-align:left">Verdict</th></tr>
+  <tr><th></th><th>n</th><th>Win</th><th>Avg R</th><th>PF</th><th>Est ₹</th><th>n</th><th>Win</th><th>Avg R</th><th>PF</th><th>Est ₹</th><th></th></tr>
+  ${b.rows.map(r=>`<tr><td style="text-align:left">${r.label}</td>${c(r.unseen.take)}${c(r.seen.take)}<td style="text-align:left" class="${vc(r.verdict)}">${r.verdict}</td></tr>`).join('')}</table></div>
+  ${b.rows[0].seen.calls?`<details open style="margin-top:8px"><summary><b>Calls (CE) vs puts (PE)</b> - TAKE trades split by side</summary><div class="tw"><table><tr><th style="text-align:left">Rules</th><th>Side</th><th colspan="5">UNSEEN (older)</th><th colspan="5">SEEN (recent)</th></tr>
+  <tr><th></th><th></th><th>n</th><th>Win</th><th>Avg R</th><th>PF</th><th>Est ₹</th><th>n</th><th>Win</th><th>Avg R</th><th>PF</th><th>Est ₹</th></tr>
+  ${b.rows.map(r=>`<tr><td style="text-align:left" rowspan="2">${r.label}</td><td class="ok">CE</td>${c(r.unseen.calls)}${c(r.seen.calls)}</tr><tr><td class="bad">PE</td>${c(r.unseen.puts)}${c(r.seen.puts)}</tr>`).join('')}</table></div></details>`:''}
+  <details style="margin-top:8px"><summary>Same table, grade A only</summary><div class="tw"><table><tr><th style="text-align:left">Rules</th><th colspan="5">UNSEEN - A only</th><th colspan="5">SEEN - A only</th></tr>
+  ${b.rows.map(r=>`<tr><td style="text-align:left">${r.label}</td>${c(r.unseen.a_only)}${c(r.seen.a_only)}</tr>`).join('')}</table></div></details>
+  <div class="sub" style="margin-top:6px">${b.notes.join(' ')} Nothing here changes the live alerts.</div>`}
+let chSel=null;
+function expLbl(e){if(!e)return '-';const d=new Date(e+'T00:00:00');return d.toLocaleDateString('en-IN',{weekday:'short',day:'2-digit',month:'short'})}
+function prefill(x){const F=$('tform');if(x.kind==='NIFTY'){F.kind.value='OPTION';F.ref.value=x.strike;F.opt.value=x.option;F.expiry.value=x.expiry||'';F.entry.value=x.opt_ltp||'';F.qty.value=(x.lot||0)*(x.lots||1);F.sl.value=x.prem_stop||'';F.target.value=x.prem_t1||''}
+ else{F.kind.value='STOCK';F.ref.value=x.symbol;F.opt.value=x.side==='LONG'?'BUY':'SELL';F.entry.value=x.entry;F.qty.value=x.qty||'';F.sl.value=x.stop;F.target.value=x.t1}
+ F.signal_id.value=x.id;$('tmsg').textContent='Filled from the signal - correct the entry price to your actual fill, then Log trade.';F.scrollIntoView({behavior:'smooth'})}
+$('tform').onsubmit=async e=>{e.preventDefault();const F=e.target,k=F.kind.value;const d={kind:k,entry:F.entry.value,qty:F.qty.value,sl:F.sl.value,target:F.target.value,signal_id:F.signal_id.value,paper:F.paper.checked};
+ if(k==='OPTION'){d.strike=F.ref.value;d.option=['CE','PE'].includes(F.opt.value)?F.opt.value:'CE';d.side='BUY';d.expiry=F.expiry.value}else{d.symbol=F.ref.value;d.side=['BUY','SELL'].includes(F.opt.value)?F.opt.value:'BUY'}
+ const r=await post('/api/trade',d);$('tmsg').textContent=r.ok?'Logged. Signal Desk will track it.':r.msg;if(r.ok)F.reset();load()};
+$('tokform').onsubmit=async e=>{e.preventDefault();const r=await post('/api/token',{token:e.target.token.value,client_id:e.target.client_id.value});$('tokmsg').textContent=r.msg;e.target.reset()};
+$('tgform').onsubmit=async e=>{e.preventDefault();await post('/api/telegram',{bot_token:e.target.bot_token.value,chat_id:e.target.chat_id.value});$('tgmsg').textContent='Saved.';e.target.bot_token.value=''};
+$('tgfind').onclick=async()=>{const r=await post('/api/telegram/find',{});$('tgmsg').textContent=r.msg+(r.chat_id?' → '+r.chat_id+' (saved)':'');if(r.chat_id)$('chat_id').value=r.chat_id};
+$('c-tg').onclick=()=>{$('tgbox').open=true;$('tgbox').scrollIntoView({behavior:'smooth'})};
+let riskDirty=false;$('riskform').oninput=()=>{riskDirty=true;$('riskmsg').innerHTML='<span class="wr">Unsaved changes - click Save risk rules</span>'};
+$('riskform').onsubmit=async e=>{e.preventDefault();const R=e.target;const r=await post('/api/risk',{daily_loss_warn:R.daily_loss_warn.value,daily_loss_limit:R.daily_loss_limit.value,max_trades:R.max_trades.value,stock_risk:R.stock_risk.value,entry_cutoff:R.entry_cutoff.value,nifty_cutoff:R.nifty_cutoff.value});if(r.ok)riskDirty=false;$('riskmsg').textContent=r.ok?'Saved ✓ ('+new Date().toLocaleTimeString()+')':r.msg;load()};
+$('btrun').onclick=async()=>{const r=await post('/api/backtest',{days:$('btdays').value});$('btstatus').textContent=r.msg};
+$('rsrun').onclick=async()=>{const r=await post('/api/research',{days:$('rsdays').value});$('rsstatus').textContent=r.msg};
+$('tgtest').onclick=async()=>{const r=await post('/api/telegram/test',{});$('tgmsg').textContent=r.msg};
+$('alerts').onchange=e=>post('/api/toggles',{alerts_enabled:e.target.checked});
+$('rform').onchange=async e=>{await post('/api/toggles',{min_grade:$('rform').min_grade.value,stock_alerts_enabled:$('rform').stock_alerts_enabled.checked,nifty_trend:$('rform').nifty_trend.checked,h1_paper:$('rform').h1_paper.checked,calls_mode:$('rform').calls_mode.value,expiry_day_contract:$('rform').expiry_day_contract.value});$('rmsg').textContent='Saved ✓ ('+new Date().toLocaleTimeString()+')'};
+document.addEventListener('focusin',e=>{if(e.target.matches('input,select'))editing=true});document.addEventListener('focusout',()=>editing=false);
+async function load(){try{render(await (await fetch('/api/state')).json())}catch(e){$('plan').textContent='Signal Desk is not responding - is the window still running?'}}
+load();setInterval(load,5000);
+</script>
+</body>
+</html>

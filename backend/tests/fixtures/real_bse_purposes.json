@@ -1,0 +1,653 @@
+[
+ {
+  "purpose": "Bonus issue 1:1",
+  "expected": [
+   {
+    "class": "BONUS",
+    "terms": [
+     1,
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Bonus issue 4:1",
+  "expected": [
+   {
+    "class": "BONUS",
+    "terms": [
+     4,
+     1
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 0.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     0.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 0.6000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     0.6
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 0.7000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     0.7
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 0.8000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     0.8
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 0.9000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     0.9
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 1.1000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     1.1
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 10.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     10.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 11.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     11.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 13.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     13.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 15.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     15.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 18.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     18.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 2.2500",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     2.25
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 20.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     20.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 22.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     22.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 3.2000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     3.2
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 3.6000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     3.6
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 4.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     4.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 4.1000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     4.1
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 6.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     6.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 6.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     6.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 7.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     7.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 8.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     8.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Dividend - Rs. - 9.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     9.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 0.6500",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     0.65
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 1.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     1.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 10.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     10.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 13.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     13.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 15.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     15.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 17.3500",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     17.35
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 19.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     19.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 19.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     19.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 2.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     2.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 2.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     2.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 2.8000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     2.8
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 3.4000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     3.4
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 30.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     30.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 36.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     36.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 44.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     44.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 5.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     5.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 6.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     6.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 6.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     6.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 7.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     7.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 7.1000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     7.1
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 7.3000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     7.3
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 8.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     8.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Final Dividend - Rs. - 9.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     9.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Interim Dividend - Rs. - 10.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     10.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Interim Dividend - Rs. - 10.5000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     10.5
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Interim Dividend - Rs. - 18.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     18.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Right Issue of Equity Shares ",
+  "expected": [
+   {
+    "class": "RIGHTS",
+    "terms": null
+   }
+  ]
+ },
+ {
+  "purpose": "Special Dividend - Rs. - 12.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     12.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Special Dividend - Rs. - 5.0000",
+  "expected": [
+   {
+    "class": "DIVIDEND",
+    "terms": [
+     5.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Spin Off ",
+  "expected": [
+   {
+    "class": "DEMERGER",
+    "terms": null
+   }
+  ]
+ },
+ {
+  "purpose": "Stock  Split From Rs.10/- to Rs.1/-",
+  "expected": [
+   {
+    "class": "SPLIT",
+    "terms": [
+     10.0,
+     1.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Stock  Split From Rs.10/- to Rs.2/-",
+  "expected": [
+   {
+    "class": "SPLIT",
+    "terms": [
+     10.0,
+     2.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Stock  Split From Rs.2/- to Rs.1/-",
+  "expected": [
+   {
+    "class": "SPLIT",
+    "terms": [
+     2.0,
+     1.0
+    ]
+   }
+  ]
+ },
+ {
+  "purpose": "Stock  Split From Rs.5/- to Rs.1/-",
+  "expected": [
+   {
+    "class": "SPLIT",
+    "terms": [
+     5.0,
+     1.0
+    ]
+   }
+  ]
+ }
+]

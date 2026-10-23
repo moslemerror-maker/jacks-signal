@@ -1,0 +1,108 @@
+{
+ "NSE": {
+  "single-day": [
+   {
+    "bcEndDate": "-",
+    "bcStartDate": "-",
+    "caBroadcastDate": null,
+    "comp": "Reliance Industries Limited",
+    "exDate": "07-Sep-2017",
+    "faceVal": "10",
+    "ind": "-",
+    "isin": "INE002A01018",
+    "ndEndDate": "-",
+    "ndStartDate": "-",
+    "recDate": "09-Sep-2017",
+    "series": "EQ",
+    "subject": " Bonus 1:1",
+    "symbol": "RELIANCE"
+   }
+  ],
+  "from": [
+   {
+    "bcEndDate": "-",
+    "bcStartDate": "-",
+    "caBroadcastDate": null,
+    "comp": "Reliance Industries Limited",
+    "exDate": "07-Sep-2017",
+    "faceVal": "10",
+    "ind": "-",
+    "isin": "INE002A01018",
+    "ndEndDate": "-",
+    "ndStartDate": "-",
+    "recDate": "09-Sep-2017",
+    "series": "EQ",
+    "subject": " Bonus 1:1",
+    "symbol": "RELIANCE"
+   }
+  ],
+  "to": [
+   {
+    "bcEndDate": "-",
+    "bcStartDate": "-",
+    "caBroadcastDate": null,
+    "comp": "Reliance Industries Limited",
+    "exDate": "07-Sep-2017",
+    "faceVal": "10",
+    "ind": "-",
+    "isin": "INE002A01018",
+    "ndEndDate": "-",
+    "ndStartDate": "-",
+    "recDate": "09-Sep-2017",
+    "series": "EQ",
+    "subject": " Bonus 1:1",
+    "symbol": "RELIANCE"
+   }
+  ]
+ },
+ "BSE": {
+  "single-day": [
+   {
+    "scrip_code": 500325,
+    "short_name": "RELIANCE",
+    "Ex_date": "07 Sep 2017",
+    "Purpose": "Bonus issue 1:1",
+    "RD_Date": "09 Sep 2017",
+    "BCRD_FROM": "",
+    "BCRD_TO": "",
+    "ND_START_DATE": "04 Sep 2017",
+    "ND_END_DATE": "07 Sep 2017",
+    "payment_date": "",
+    "exdate": "20170907",
+    "long_name": "Reliance Industries Ltd"
+   }
+  ],
+  "from": [
+   {
+    "scrip_code": 500325,
+    "short_name": "RELIANCE",
+    "Ex_date": "07 Sep 2017",
+    "Purpose": "Bonus issue 1:1",
+    "RD_Date": "09 Sep 2017",
+    "BCRD_FROM": "",
+    "BCRD_TO": "",
+    "ND_START_DATE": "04 Sep 2017",
+    "ND_END_DATE": "07 Sep 2017",
+    "payment_date": "",
+    "exdate": "20170907",
+    "long_name": "Reliance Industries Ltd"
+   }
+  ],
+  "to": [
+   {
+    "scrip_code": 500325,
+    "short_name": "RELIANCE",
+    "Ex_date": "07 Sep 2017",
+    "Purpose": "Bonus issue 1:1",
+    "RD_Date": "09 Sep 2017",
+    "BCRD_FROM": "",
+    "BCRD_TO": "",
+    "ND_START_DATE": "04 Sep 2017",
+    "ND_END_DATE": "07 Sep 2017",
+    "payment_date": "",
+    "exdate": "20170907",
+    "long_name": "Reliance Industries Ltd"
+   }
+  ]
+ }
+}

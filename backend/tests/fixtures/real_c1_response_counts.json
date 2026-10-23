@@ -1,0 +1,479 @@
+[
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-boundary-single-day",
+  "from": "2017-09-07",
+  "to": "2017-09-07",
+  "count": 1,
+  "sha256": "6076e5c4731dfd7ff7cf0384272cc20cd3eb51d752f6fd193274ef563aa4abae"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-boundary-from",
+  "from": "2017-09-07",
+  "to": "2017-10-07",
+  "count": 1,
+  "sha256": "6076e5c4731dfd7ff7cf0384272cc20cd3eb51d752f6fd193274ef563aa4abae"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-boundary-to",
+  "from": "2017-08-08",
+  "to": "2017-09-07",
+  "count": 1,
+  "sha256": "6076e5c4731dfd7ff7cf0384272cc20cd3eb51d752f6fd193274ef563aa4abae"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-boundary-single-day",
+  "from": "2017-09-07",
+  "to": "2017-09-07",
+  "count": 1,
+  "sha256": "70fc5f4956b6f5ae691b288432b0fd685e48b3af29b24d05a39937ed653f8a8e"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-boundary-from",
+  "from": "2017-09-07",
+  "to": "2017-10-07",
+  "count": 1,
+  "sha256": "70fc5f4956b6f5ae691b288432b0fd685e48b3af29b24d05a39937ed653f8a8e"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-boundary-to",
+  "from": "2017-08-08",
+  "to": "2017-09-07",
+  "count": 1,
+  "sha256": "70fc5f4956b6f5ae691b288432b0fd685e48b3af29b24d05a39937ed653f8a8e"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "HDFCBANK",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 15,
+  "sha256": "e575e6fa640a1933924e860c61f838ebbcef73e635595110fc4bdd1f5e0158cd"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "HDFCBANK",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 4,
+  "sha256": "0f45772b3d3f67291e6ea713b77d715bbcd9a71d52a774789d0143a41e0cf233"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "HDFCBANK",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 5,
+  "sha256": "2169c8e48655abf192835ffbd285e0007d30f2f3a43d9c9cf349afb81dd84a0e"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "HDFCBANK",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 6,
+  "sha256": "236363b04c6c2d178cdab9e68b9cbe280364af02341640aac73493be8af4c6f9"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "HDFCBANK",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 15,
+  "sha256": "abbb7fae0470f4d34c0fbc68276cbe13ba8b85273048989cc096259182df7bca"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "HDFCBANK",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 4,
+  "sha256": "b22c0b262f76c8b988f5cb4a9c6fd62a7d6bc9bc4ee3406df5afef3dc20bd35d"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "HDFCBANK",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 5,
+  "sha256": "ba03effc704aec196602330508757ba594bab0a3c32ac6b93652f5400ad176d8"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "HDFCBANK",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 6,
+  "sha256": "34fd27a00523a21b365dd2df3bd7efde7eb9ed66949dc767f9ab7ae7e7bfe8e8"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 13,
+  "sha256": "6244743b4bebaab72757ddbacb6a03f9558415c92a34d41133838a385006c982"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 5,
+  "sha256": "7eef8eedaf89d336908ca01f4a24c331f2fae26cd2f0d68f2f333b197c80f360"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 3,
+  "sha256": "bb38b1cf3504dcdfd033a6f52b4c844b9726a25fd5d9c0a6324c95406033b892"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 5,
+  "sha256": "b709d3cf4cdb6cc8771064b12a9984eebeee1a747bbb03157df57de5e357e89d"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 13,
+  "sha256": "d6026a92437111e02db7be9abb2bc89628066e0761f6f453b1c6261eeb3aa157"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 5,
+  "sha256": "94fda15112cf6b531bec3ea7319334ba5c56f826d4dea083c2caa67fe5e75ee9"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 3,
+  "sha256": "6f5898d9e8045646fc55524554e9a659be112ee72fe95ba6b6b2c08a048104e1"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 5,
+  "sha256": "6f3f548b99e62b94523fd44a8e02f386adedf98c2fb6641f6eb40a48fbda55e2"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 17,
+  "sha256": "a57131dd94bed70f30bdc04cd949cd8e01dbc8d9c3ba76b0f4cb516b3681e3c6"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 6,
+  "sha256": "c9e70e18bae322de0777d326f9e7a0eb2c1cc30830c0e40586a4436673c0cc26"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 4,
+  "sha256": "4224bb526236eb2a65972b5fd6e7d45b2d82a66628bee5d49b07204c3ea61ef3"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 7,
+  "sha256": "c8fcded26ccd3b9386d3466956eab687a5aa012a68e1f43d5c17ed1b3785306b"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 18,
+  "sha256": "9b1329426b785555af7767ed39c1fd5795c3e1ff912cc2e3f208fffa3682f70b"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 7,
+  "sha256": "62391eb009a909e7a64734fdad69fa7c28a6be0c237fd4581712ce9a7191d9e5"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 4,
+  "sha256": "13494ea2a4b20aff0be4e4d0b81f9097763e97cc2c0d1f3bc0944054f5b8f4be"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 7,
+  "sha256": "d71a85e85e6f8c736ecc6683735a2a140af947af578c6729efeb3bd368897a76"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 13,
+  "sha256": "aa06a0a97d17f1cd0c631a44553ff27da71261187f5b2e754aa5ddf0e8fd5542"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 5,
+  "sha256": "8b4486aa5ee42ca0963f745177a96be0c558c5943b52d11513d09f57119240f4"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 4,
+  "sha256": "8e7ba45be725109cb30c29704eb3a67c1b3222ea246828f712f46aa3cac16cfd"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 4,
+  "sha256": "12c888763b204527ad974e635229b7cfbb374e26f4cd70779c984b53f9eb3dfa"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 13,
+  "sha256": "7c2dbb7780219331e76f067c7d287393bc2b836e3362206db4a588e05659e59a"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 5,
+  "sha256": "692b0d60664db69c5719765e8e9cbdc01a9c18185bab6dfc6b016caba7d2797f"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 4,
+  "sha256": "f28f35e9130f76bf634ec00a4a2f37588283e7372b36e5b14b5419d95ae2ff8e"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 4,
+  "sha256": "7e473381ee9e583ab167c87991280453c9d8eee6e051d001890df25642ca8f66"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 16,
+  "sha256": "2ee90641f070f1d4f3b95f54911403487c0a01f2f86b2c282f4ab7a67b3fb453"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 5,
+  "sha256": "6e258f12658d064980b2649a20f011a106ab07320fe3ddb14a5a29ae150963f5"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 5,
+  "sha256": "ab9c9695b0be448dad1e124ff598f9d074e7995a9fb450c3b257e9d1398cb067"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 6,
+  "sha256": "48dcf00311d6d071b91eaf29bef096f0e6c7a7889362d552366ee9facd349692"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-whole",
+  "from": "2015-01-01",
+  "to": "2026-09-20",
+  "count": 16,
+  "sha256": "d730adfb556f4b72f3e5b7bebd8782554f719d4eecfdbec28c94ae899a81d4fc"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-part-1of3",
+  "from": "2015-01-01",
+  "to": "2018-12-31",
+  "count": 5,
+  "sha256": "eef2b07080754babd2134c2e382741f3fb1ee1ed9889a81092ad5abfdd3947d4"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-part-2of3",
+  "from": "2019-01-01",
+  "to": "2022-12-31",
+  "count": 5,
+  "sha256": "482ccc2a686aa6e97faef2f17d43ecdc6555024d8d421cd22b978238e435e2ac"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-part-3of3",
+  "from": "2023-01-01",
+  "to": "2026-09-20",
+  "count": 6,
+  "sha256": "59fe6dd5b39c130e00d8d6d1cac3b6117d88fcb413c9756d40d28bd8493e5f36"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-cap-probe-wide",
+  "from": "1990-01-01",
+  "to": "2026-09-20",
+  "count": 28,
+  "sha256": "f3b37c70494f424f27fabd31e1381e8cfcfb6e2f9ec90afc24058baebd0c70a8"
+ },
+ {
+  "provider": "BSE",
+  "symbol": "RELIANCE",
+  "purpose": "c1-cap-probe-wide",
+  "from": "1990-01-01",
+  "to": "2026-09-20",
+  "count": 26,
+  "sha256": "e86d862be7d181528e6076530dae3e42dcab9a1cffe88459af44ea5722d91353"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "RELIANCE",
+  "purpose": "phase-a-default",
+  "from": null,
+  "to": null,
+  "count": 20,
+  "sha256": "65c7eda6f246da0366028c2fb1a49ec326c401af2471ccee5dc22e137d5c0a36"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "KOTAKBANK",
+  "purpose": "phase-a-default",
+  "from": null,
+  "to": null,
+  "count": 20,
+  "sha256": "84d721e123866657e5fbdfe39a5ae23428fd1a7af6828afc491aee2c943a69bf"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "BAJFINANCE",
+  "purpose": "phase-a-default",
+  "from": null,
+  "to": null,
+  "count": 20,
+  "sha256": "4e3914001888c05a6de76a9a8ccfcf880a91ba098395c491c70e2f5ca3bd569a"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "HDFCBANK",
+  "purpose": "phase-a-default",
+  "from": null,
+  "to": null,
+  "count": 20,
+  "sha256": "4bacb854cf4cb5df98bd89fcef889e8629cd7e5f8394f8bd16b6ebc185f7da51"
+ },
+ {
+  "provider": "NSE",
+  "symbol": "JSWSTEEL",
+  "purpose": "phase-a-default",
+  "from": null,
+  "to": null,
+  "count": 20,
+  "sha256": "52f02c9483b71d57c208c6b3bc85913f796546d24181cc278a822a4744a093ab"
+ }
+]

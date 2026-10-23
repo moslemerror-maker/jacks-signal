@@ -1,0 +1,43 @@
+# Environments / secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Data (raw/curated data is not committed to git; tracked separately)
+/data/
+*.parquet
+*.duckdb
+
+# Docker/local state
+docker/volumes/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/coverage/
+
+# Local caches, results and live state
+cache/
+results/
+signal_desk/state/
+*.pkl
+*.log

@@ -1,0 +1,1667 @@
+[
+ {
+  "subject": "Dividend - Rs 6 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE",
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 6.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 6 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 5.5 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 5.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 5.5 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Bonus 1:1",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK",
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "BONUS",
+    "confident": true,
+    "ratio_new": 1,
+    "ratio_existing": 1,
+    "fragment": "Bonus 1:1"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 10 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 10.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 10 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 9 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 9.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 9 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Demerger",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DEMERGER",
+    "confident": false,
+    "fragment": "Demerger"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 8 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 8.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 8 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 7 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 7.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 7 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 6.50  Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 6.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 6.50  Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Rights 1:15 @ Premium Rs 1247",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "RIGHTS",
+    "confident": false,
+    "ratio_new": 1,
+    "ratio_existing": 15,
+    "fragment": "Rights 1:15 @ Premium Rs 1247"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend - Rs 6.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL",
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 6.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 6.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend- Rs 6 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 6.0,
+    "currency": "INR",
+    "fragment": "Dividend- Rs 6 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend -  Rs 11/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 11.0,
+    "currency": "INR",
+    "fragment": "Dividend -  Rs 11/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Interim Dividend - Rs 10.50/- Per Share (Purpose Revised)",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 10.5,
+    "currency": "INR",
+    "fragment": "Interim Dividend - Rs 10.50/- Per Share (Purpose Revised)"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 10/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 10.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 10/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend Rs. 9.50 Per Equity Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 9.5,
+    "currency": "INR",
+    "fragment": "Dividend Rs. 9.50 Per Equity Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/ Dividend Rs. 9 Per Equity Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 9.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting/ Dividend Rs. 9 Per Equity Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend Rs.8.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 8.5,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend Rs.8.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend-Rs.8/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "RELIANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 8.0,
+    "currency": "INR",
+    "fragment": "Dividend-Rs.8/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 0.65 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.65,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 0.65 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 5.0,
+    "face_value_to": 1.0,
+    "fragment": "Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 2.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 2.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 2.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 2 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL",
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 2.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 2 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 1.50 Per Sh",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 1.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 1.50 Per Sh"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 1.10 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 1.1,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 1.10 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 0.90 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.9,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 0.90 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend Rs 0.80 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.8,
+    "currency": "INR",
+    "fragment": "Dividend Rs 0.80 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend- Re 0.70 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.7,
+    "currency": "INR",
+    "fragment": "Dividend- Re 0.70 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend-Re 0.60 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.6,
+    "currency": "INR",
+    "fragment": "Dividend-Re 0.60 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/ Divdend - Re 0.50/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.5,
+    "currency": "INR",
+    "fragment": "Annual General Meeting/ Divdend - Re 0.50/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Bonus 1: 1",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "BONUS",
+    "confident": true,
+    "ratio_new": 1,
+    "ratio_existing": 1,
+    "fragment": "Bonus 1: 1"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend Re 0.90/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.9,
+    "currency": "INR",
+    "fragment": "Dividend Re 0.90/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend Re 0.80/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.8,
+    "currency": "INR",
+    "fragment": "Dividend Re 0.80/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend Re 0.70/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.7,
+    "currency": "INR",
+    "fragment": "Dividend Re 0.70/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting / Dividend Re 0.60 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.6,
+    "currency": "INR",
+    "fragment": "Annual General Meeting / Dividend Re 0.60 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend Re.0.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.5,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend Re.0.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Face Value Split From Rs.10/- To Rs.5/-",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 10.0,
+    "face_value_to": 5.0,
+    "fragment": "Face Value Split From Rs.10/- To Rs.5/-"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend Re.0.85 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.85,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend Re.0.85 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Agm/Div-Re.0.75 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Agm"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 0.75,
+    "currency": "INR",
+    "fragment": "Div-Re.0.75 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Bonus 4:1",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "BONUS",
+    "confident": true,
+    "ratio_new": 4,
+    "ratio_existing": 1,
+    "fragment": "Bonus 4:1"
+   }
+  ]
+ },
+ {
+  "subject": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 2.0,
+    "face_value_to": 1.0,
+    "fragment": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 44 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 44.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 44 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Special Dividend - Rs 12 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 12.0,
+    "currency": "INR",
+    "fragment": "Special Dividend - Rs 12 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 36 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 36.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 36 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 30 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 30.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 30 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 20 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 20.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 20 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend - Rs 10 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 10.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 10 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Interim Dividend - Rs 10 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 10.0,
+    "currency": "INR",
+    "fragment": "Interim Dividend - Rs 10 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/ Dividend - Rs 6 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 6.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting/ Dividend - Rs 6 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting / Dividend- Rs 4 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 4.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting / Dividend- Rs 4 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend - Rs 3.60/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 3.6,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 3.60/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Bonus 1:1/Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "BONUS",
+    "confident": true,
+    "ratio_new": 1,
+    "ratio_existing": 1,
+    "fragment": "Bonus 1:1"
+   },
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 10.0,
+    "face_value_to": 2.0,
+    "fragment": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend Rs 7/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 7.0,
+    "currency": "INR",
+    "fragment": "Dividend Rs 7/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Interim Dividend - Rs 18/- Per Share (Purpose Revised)",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 18.0,
+    "currency": "INR",
+    "fragment": "Interim Dividend - Rs 18/- Per Share (Purpose Revised)"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting / Dividend - Rs 18/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 18.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting / Dividend - Rs 18/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend Rs.16/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 16.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend Rs.16/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend Rs.15/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 15.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend Rs.15/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Rights 3:19 @ Premium Rs 1090 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "BAJFINANCE"
+  ],
+  "expected": [
+   {
+    "type": "RIGHTS",
+    "confident": false,
+    "ratio_new": 3,
+    "ratio_existing": 19,
+    "fragment": "Rights 3:19 @ Premium Rs 1090 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 13 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 13.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 13 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Special Dividend - Rs 5 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 5.0,
+    "currency": "INR",
+    "fragment": "Special Dividend - Rs 5 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 22 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 22.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 22 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 19.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 19.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 19.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 19 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 19.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 19 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 15.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 15.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 15.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 6.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 6.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 6.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 2.0,
+    "face_value_to": 1.0,
+    "fragment": "Face Value Split (Sub-Division) - From Rs 2 Per Share To Rs 1 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend Rs 15 Per Sh",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 15.0,
+    "currency": "INR",
+    "fragment": "Dividend Rs 15 Per Sh"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend- Rs 13 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 13.0,
+    "currency": "INR",
+    "fragment": "Dividend- Rs 13 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 11/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 11.0,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 11/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 9.50/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 9.5,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 9.50/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/ Dividend - Rs 8/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 8.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting/ Dividend - Rs 8/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend - Rs.6.85/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 6.85,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend - Rs.6.85/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting / Final Dividend Rs.5.50/- Per Equity Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 5.5,
+    "currency": "INR",
+    "fragment": "Annual General Meeting / Final Dividend Rs.5.50/- Per Equity Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend Rs.4.30 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 4.3,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend Rs.4.30 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Face Value Split From Rs.10/- To Rs.2/-",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 10.0,
+    "face_value_to": 2.0,
+    "fragment": "Face Value Split From Rs.10/- To Rs.2/-"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend Rs.16.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 16.5,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend Rs.16.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 7.10 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 7.1,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 7.10 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Dividend - Rs 2.80 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 2.8,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 2.80 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend - Rs 7.30 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 7.3,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 7.30 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend - Rs 3.40 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 3.4,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 3.40 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend - Rs 17.35 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 17.35,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 17.35 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend Rs 4.10 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 4.1,
+    "currency": "INR",
+    "fragment": "Dividend Rs 4.10 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting / Dividend- Rs 3.20 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 3.2,
+    "currency": "INR",
+    "fragment": "Annual General Meeting / Dividend- Rs 3.20 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/Dividend - Rs 2.25/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Annual General Meeting"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 2.25,
+    "currency": "INR",
+    "fragment": "Dividend - Rs 2.25/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Fv Splt Frm Rs 10 To Re 1",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 10.0,
+    "face_value_to": 1.0,
+    "fragment": "Fv Splt Frm Rs 10 To Re 1"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/ Dividend - Rs 7.50/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 7.5,
+    "currency": "INR",
+    "fragment": "Annual General Meeting/ Dividend - Rs 7.50/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting/ Dividend - Rs 11/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 11.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting/ Dividend - Rs 11/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting / Dividend - Rs 11/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 11.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting / Dividend - Rs 11/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting / Dividend - Rs.10/- Per Equity Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 10.0,
+    "currency": "INR",
+    "fragment": "Annual General Meeting / Dividend - Rs.10/- Per Equity Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting / Dividend - Rs. 7.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 7.5,
+    "currency": "INR",
+    "fragment": "Annual General Meeting / Dividend - Rs. 7.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Annual General Meeting And Dividend Rs.12.25 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 12.25,
+    "currency": "INR",
+    "fragment": "Annual General Meeting And Dividend Rs.12.25 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Agm/Dividend Rs 9.50 Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Agm"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 9.5,
+    "currency": "INR",
+    "fragment": "Dividend Rs 9.50 Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Agm/Div-Re.1/- Per Share",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Agm"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": true,
+    "cash_amount_per_share": 1.0,
+    "currency": "INR",
+    "fragment": "Div-Re.1/- Per Share"
+   }
+  ]
+ },
+ {
+  "subject": "Agm/Dividend - 140%",
+  "source": "NSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "OTHER",
+    "confident": false,
+    "fragment": "Agm"
+   },
+   {
+    "type": "DIVIDEND",
+    "confident": false,
+    "fragment": "Dividend - 140%"
+   }
+  ]
+ },
+ {
+  "subject": "Stock  Split From Rs.10/- to Rs.2/-",
+  "source": "BSE",
+  "symbols": [
+   "HDFCBANK"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 10.0,
+    "face_value_to": 2.0,
+    "fragment": "Stock  Split From Rs.10/- to Rs.2/-"
+   }
+  ]
+ },
+ {
+  "subject": "Stock  Split From Rs.10/- to Rs.5/-",
+  "source": "BSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 10.0,
+    "face_value_to": 5.0,
+    "fragment": "Stock  Split From Rs.10/- to Rs.5/-"
+   }
+  ]
+ },
+ {
+  "subject": "Bonus issue 1:1",
+  "source": "BSE",
+  "symbols": [
+   "KOTAKBANK"
+  ],
+  "expected": [
+   {
+    "type": "BONUS",
+    "confident": true,
+    "ratio_new": 1,
+    "ratio_existing": 1,
+    "fragment": "Bonus issue 1:1"
+   }
+  ]
+ },
+ {
+  "subject": "Stock  Split From Rs.10/- to Rs.1/-",
+  "source": "BSE",
+  "symbols": [
+   "JSWSTEEL"
+  ],
+  "expected": [
+   {
+    "type": "SPLIT",
+    "confident": true,
+    "face_value_from": 10.0,
+    "face_value_to": 1.0,
+    "fragment": "Stock  Split From Rs.10/- to Rs.1/-"
+   }
+  ]
+ }
+]
